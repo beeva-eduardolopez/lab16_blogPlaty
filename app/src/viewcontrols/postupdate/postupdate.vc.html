@@ -1,0 +1,30 @@
+<header>
+    <div id="block">
+        <div style="padding: 10px;">
+            <h2>Update Post</h2>
+            <nav>
+                <a href="#blogpost">List Post</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="center">
+    <form class="fill" name="newBlogData">
+        Title:
+        <br/>
+        <plat-input class="input-normal" id="title" type="text"  plat-bind="post.title"></plat-input>
+        <br/>
+        <br/> Author:
+        <br/>
+        <plat-input class="input-normal" id="author" type="text"  plat-bind="post.author"></plat-input>
+        <br/>
+        <br/> Content:
+        <br/>
+        <textarea rows="10" cols="75" id="content" plat-bind="post.content"></textarea>
+        <br/>
+        <br/>
+        <plat-button class="button-primary" plat-tap="postUpdate()">Update Post</plat-button>
+    </form>
+</div>
+

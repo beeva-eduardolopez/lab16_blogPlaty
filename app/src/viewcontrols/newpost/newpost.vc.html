@@ -1,0 +1,31 @@
+<header>
+    <div id="block">
+        <div style="padding: 10px;">
+            <h2>New Post</h2> 
+            <nav>
+                <a href="#blogpost">List Post</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="center">
+    <form class="fill" name="newBlogData">
+        Title:
+        <br/>
+        <plat-input class="input-normal" id="title" type="text" placeholder="Title...." plat-bind="post.title"></plat-input>
+        <br/>
+        <br/> Author:
+        <br/>
+        <plat-input class="input-normal" id="author" type="text" placeholder="Author...." plat-bind="post.author"></plat-input>
+        <br/>
+        <br/> Content:
+        <br/>
+        <textarea rows="10" cols="75" id="content" plat-bind="post.content" placeholder="Content Post..."></textarea>
+        <br/>
+        <br/>
+        <plat-button class="button-primary" plat-tap="postData()">Send Post</plat-button>
+        <!--<input class="btn btn-primary" value="Send Post" type="submit" ng-click="postData();">-->
+    </form>
+</div>

@@ -1,0 +1,91 @@
+@import '../../node_modules/platypusui/dist/platypus';
+
+.center{
+     justify-content: center; 
+     text-align: center;
+     width: auto; 
+     padding-top: 40px; 
+}
+
+.fill {
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background:#27453A;
+  border:3px solid #D95B43;
+  color:#ECD078;
+  text-align: center;
+  margin: 0 auto;
+  width: 65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+
+}
+
+.input-normal {
+  width: 70%;
+  height: 70%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+textarea {
+    color: black;
+}
+
+#block {
+    background:#27453A;
+    border:3px solid #D95B43;
+    color:#ECD078;
+    font-family:Georgia,"Times New Roman",Times,serif;
+    margin:20px 0px;
+    padding:20px;
+}  
+
+#block h2{
+    border-bottom:1px solid #D95B43;
+    font-size:24px;
+    font-weight:normal;
+    letter-spacing:-1px;
+    line-height:26px;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+    padding: 0 10px;
+    text-decoration: none;
+    color:#ECD078;
+    
+}
+
+nav a:hover {
+    background: #ECD078;
+}
+
+.author {
+    color:#D95B43;  
+    
+}
+
+a {
+    padding: 0 10px;
+    text-decoration: none;
+    color:#ECD078;
+    
+}
+
+a:hover {
+    background: #ECD078;
+}
+
+@import '../src/viewcontrols/blogposts/blogposts.vc.less';
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/newpost/newpost.vc.less';
+@import '../src/viewcontrols/postdetail/postdetail.vc.less';
+@import '../src/viewcontrols/postupdate/postupdate.vc.less';
