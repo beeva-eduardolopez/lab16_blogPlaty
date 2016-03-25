@@ -18,4 +18,16 @@ declare module contexts {
     interface IBlogs {
         posts: Array<models.IPost>;
     }
+
+    // interface IPost {
+    //     id?: number;
+    //     title: string;
+    //     author: string;
+    //     content: string;
+    // }
+    
+    interface IPost {
+        post: models.IPost;
+        error: string;
+    }
 }

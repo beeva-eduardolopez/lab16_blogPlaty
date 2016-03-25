@@ -3,7 +3,8 @@ import BaseRepository from '../base/base.repo';
 import BlogsService from '../../services/blogs/blogs.svc';
 
 export default class BlogRepository extends BaseRepository {
-
+    
+    post: models.IPost;
     postid: number = 0;
     title: string = "";
     content: string = "";
@@ -14,13 +15,8 @@ export default class BlogRepository extends BaseRepository {
     }
 
     createPost(title: string, author: string, content: string): async.IThenable<boolean> {
-        return this.blogsService.createPost(title, author, content).then((post) => {
-            this.postid = post.id;
-            this.title = post.title;
-            this.author = post.author;
-            this.content = post.content;
-            return true;
-        });
+        return this.blogsService.createPost(this.post);
+
     }
 
     listPost(): async.IThenable<Array<models.IPost>> {
