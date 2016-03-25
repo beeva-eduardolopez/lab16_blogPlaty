@@ -1,11 +1,12 @@
 import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
 import BlogsService from '../../services/blogs/blogs.svc';
+import BlogsRepository from '../../repositories/blog/blog.repo';
 
 export default class BlogpostsViewControl extends BaseViewControl {
     templateString: string = require('./blogposts.vc.html');
 
-    constructor(private blogsService: BlogsService) {
+    constructor(private blogsService: BlogsService, private blogsRepository: BlogsRepository) {
         super();
     }
 
