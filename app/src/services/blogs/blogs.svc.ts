@@ -32,14 +32,6 @@ export default class BlogsService extends BaseService {
             }
             );
     }
-
-    // createPost(title: models.IPost): async.IThenable<boolean> {
-
-    //     return this.json(this.host + '/posts', post, 'POST')
-    //         .then((success) => {
-    //             return true;
-    //         });
-    // }
 }
 
 register.injectable('blogs-svc', BlogsService);
