@@ -4,7 +4,7 @@
             <h2>Blog Site DepotUI Platy</h2>
             by     <span class="author">Eduardo Lopez Anta</span></span>
             <nav>
-                <plat-button class="button-danger resize" plat-tap="">New Post</plat-button>
+                <plat-button class="button-danger resize" plat-tap="createPost()">New Post</plat-button>
                 <!--<a href="#newpost">New Post</a>-->
             </nav>
         </div>
@@ -21,8 +21,10 @@
                 <div><span class="list-post">Content: </span> {{post.content}}</div>
                 <div><span class="list-post">Date: </span> {{post.createdAt}}</div>
                 <br>
-                <a href="#post/{{post.id}}">View Detail</a>
-                <a href="#updatepost/{{post.id}}">Update Post</a>
+                <plat-button class="button-danger button-small" plat-tap="detailPost()">View Detail</plat-button>
+                <plat-button class="button-danger button-small" plat-tap="updatePost()">Update Post</plat-button>
+                <!--<a href="#post/{{post.id}}">View Detail</a>
+                <a href="#updatepost/{{post.id}}">Update Post</a>-->
             </div>
         </div>
     </div>

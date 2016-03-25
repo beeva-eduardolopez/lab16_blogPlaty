@@ -2,8 +2,9 @@
     <div id="block">
         <div style="padding: 10px;">
             <h2>New Post</h2> 
+             by     <span class="author">Eduardo Lopez Anta</span></span>
             <nav>
-                <plat-button class="button-danger resize" plat-tap="">List Post</plat-button>
+                <plat-button class="button-danger resize" plat-tap="listPost()">List Post</plat-button>
                 <!--<a href="#blogpost">List Post</a>-->
             </nav>
         </div>
@@ -15,13 +16,18 @@
     <form class="fill" name="newBlogData">
         Title:
         <br/>
+        <br/>
         <plat-input class="input-normal" id="title" type="text" placeholder="Title...." plat-bind="post.title"></plat-input>
+        <br/>
         <br/>
         <br/> Author:
         <br/>
+        <br/>
         <plat-input class="input-normal" id="author" type="text" placeholder="Author...." plat-bind="post.author"></plat-input>
         <br/>
+        <br/>
         <br/> Content:
+        <br/>
         <br/>
         <textarea rows="10" cols="93" id="content" plat-bind="post.content" placeholder="Content Post..."></textarea>
         <br/>

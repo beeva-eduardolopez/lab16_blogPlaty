@@ -12,7 +12,7 @@ export default class MyApp extends App {
 		config.routingType = config.STATE;
 
           router.configure([
-            { pattern: '', view: HomeViewControl },
+            { pattern: '', view: BlogpostsViewControl },
             { pattern: 'blogposts', view: BlogpostsViewControl },
             { pattern: 'newpost', view: NewpostViewControl },
             { pattern: 'postdetail', view: PostdetailViewControl },
