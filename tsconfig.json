@@ -27,6 +27,7 @@
         "app/src/viewcontrols/blogposts/blogposts.vc.ts",
         "app/src/viewcontrols/home/home.vc.ts",
         "app/src/viewcontrols/newpost/newpost.vc.ts",
-        "app/src/viewcontrols/postdetail/postdetail.vc.ts"
+        "app/src/viewcontrols/postdetail/postdetail.vc.ts",
+        "app/src/viewcontrols/postupdate/postupdate.vc.ts"
     ]
 }
