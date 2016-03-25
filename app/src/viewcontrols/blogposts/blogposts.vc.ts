@@ -8,9 +8,9 @@ export default class BlogpostsViewControl extends BaseViewControl {
     constructor(private blogsService: BlogsService) {
         super();
     }
-    
+
     context: contexts.IBlogs = {
-        posts: <Array<models.IPost>>[]
+        posts: <Array<models.IPost>>[],
     };
 
     navigatedTo(): void {
@@ -22,24 +22,22 @@ export default class BlogpostsViewControl extends BaseViewControl {
 
     createPost(): void {
         this.navigator.navigate('newpost-vc', {
-            parameters: {
-
-            }
+            parameters: {}
         });
     }
 
-    detailPost(): void {
+    detailPost(id: number): void {
         this.navigator.navigate('postdetail-vc', {
             parameters: {
-
+                id:id
             }
         });
     }
 
-    updatePost(): void {
+    updatePost(id: number): void {
         this.navigator.navigate('postupdate-vc', {
             parameters: {
-
+                id: id
             }
         });
     }
