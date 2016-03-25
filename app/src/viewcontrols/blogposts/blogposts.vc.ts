@@ -14,8 +14,8 @@ export default class BlogpostsViewControl extends BaseViewControl {
     };
 
     navigatedTo(): void {
-        this.blogsService.getBlogs().then((blogs) => {
-            this.context.posts = blogs;
+        this.blogsService.getBlogs().then((posts) => {
+            this.context.posts = posts;
         });
     }
 
